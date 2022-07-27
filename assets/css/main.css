@@ -2254,6 +2254,10 @@ input, select, textarea {
 		background-attachment: fixed, fixed;
 		background-position: top left, bottom center;
 		background-repeat: repeat, no-repeat;
+
+	}
+
+	.shadow {
 		text-shadow: 2px 2px black;
 	}
 
@@ -2295,8 +2299,6 @@ input, select, textarea {
 		background-attachment: fixed, fixed;
 		background-position: top left, bottom center;
 		background-repeat: repeat, no-repeat;
-
-		text-shadow: 2px 2px black;
 	}
 
 
@@ -2341,3 +2343,34 @@ input, select, textarea {
 			}
 
 		}
+
+
+/* Press */
+
+	#press {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.pressitem {
+		display: flex;
+		height: 20em;
+		margin-bottom: 2em;
+	}
+
+	.pressleft, .pressright {
+		display: flex;
+		flex-direction: column;
+		width: 50%;
+		padding-right: 2em;
+		padding-left: 2em;
+		text-align: center;
+		align-items: center;
+		justify-content: center;
+	}
+
+	#press img {
+		max-width:100%;
+		height: auto;
+	}
+
