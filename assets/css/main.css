@@ -2306,7 +2306,7 @@ input, select, textarea {
 
 	#contact {
 		overflow: hidden;
-		padding-bottom: 0;
+		padding-bottom: 4em;
 	}
 
 		#contact .box {
@@ -2354,8 +2354,7 @@ input, select, textarea {
 
 	.pressitem {
 		display: flex;
-		height: 20em;
-		margin-bottom: 2em;
+		height: 25em;
 	}
 
 	.pressleft, .pressright {
@@ -2365,12 +2364,42 @@ input, select, textarea {
 		padding-right: 2em;
 		padding-left: 2em;
 		text-align: center;
-		align-items: center;
 		justify-content: center;
 	}
 
 	#press img {
 		max-width:100%;
-		height: auto;
+		max-height:auto;
 	}
 
+	@media screen and (max-width: 736px) {
+
+		.pressitem {
+			height: 15em;
+		}
+
+		.pressleft, .pressright {
+			padding-right: 1em;
+			padding-left: 1em;
+		}
+
+	}
+
+	@media screen and (max-width: 480px) {
+
+		.pressitem {
+			height: 15em;
+		}
+
+		.pressleft, .pressright {
+			padding-right: .5em;
+			padding-left: .5em;
+		}
+	}
+
+/* Production */
+
+ .production img {
+ 	max-width: 100%;
+ 	max-height: auto;
+ }
